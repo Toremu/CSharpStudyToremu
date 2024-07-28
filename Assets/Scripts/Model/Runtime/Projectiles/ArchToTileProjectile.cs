@@ -25,15 +25,20 @@ namespace Model.Runtime.Projectiles
             
             float localHeight = 0f;
             float totalDistance = _totalDistance;
+            float maxHeight = totalDistance * 0.6f ;
 
-            ///////////////////////////////////////
-            // Insert you code here
-            ///////////////////////////////////////
+            localHeight = maxHeight * (-(t * 2 - 1) * (t * 2 - 1) + 1);
+
+            Debug.Log(localHeight);
+
+           
+           /*/ фоормула расчёта LocalHeight (=maxHeight*(-(t*2-1)*(t*2-1)+1)
+            * maxHeight составляет 60% от totalDistance 
+           /*/
 
 
-            ///////////////////////////////////////
-            // End of the code to insert
-            ///////////////////////////////////////
+
+
             
             Height = localHeight;
             if (time > StartTime + _timeToTarget)
