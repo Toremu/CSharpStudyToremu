@@ -20,7 +20,7 @@ namespace UnitBrains.Player
 
             if(GetTemperature() < overheatTemperature)
             {
-                for (float i = _temperature; i < overheatTemperature; i++)
+                for (float i = -1; i < GetTemperature() ; i++)
                 {
                     var projectile = CreateProjectile(forTarget);
                     AddProjectileToList(projectile, intoList);
