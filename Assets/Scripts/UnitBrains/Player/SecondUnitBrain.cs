@@ -55,7 +55,7 @@ namespace UnitBrains.Player
             float minDisToEnemy = float.MaxValue;
             Vector2Int nearEnemy = Vector2Int.zero;
            List<Vector2Int> result = GetReachableTargets();
-            while (result.Count > 1)
+            
 
                 if (result.Count > 0) 
             {
